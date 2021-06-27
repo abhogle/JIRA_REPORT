@@ -125,3 +125,8 @@ const generateReportData = (key) => {
     })
     .catch((err) => console.log(err.response.status));
 };
+
+module.exports = {
+  rawData,
+  reportData
+}

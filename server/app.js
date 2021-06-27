@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
+const reportData = require('./generateReport')
 
 app.get('/api', (req, res) => {
   console.log("Logged");
-  res.send('Hello World!');
+  res.send(reportData.reportData);
 });
 
 app.listen(3000, () => {
