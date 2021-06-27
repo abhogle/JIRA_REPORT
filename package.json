@@ -1,0 +1,26 @@
+{
+  "name": "jira_report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js",
+    "report": "node server/generateReport.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "axios-retry": "^3.1.9",
+    "axios-retry-after": "^1.0.3",
+    "bluebird": "^3.7.2",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "json-2-csv": "^3.14.1",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7"
+  }
+}
